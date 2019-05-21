@@ -1,6 +1,6 @@
 ![](./images/iotp_icon_64.png)
 
-# 4.1 Lab IoT - Simulator - Node-RED - Introduction
+# 3.0 Lab IoT - Simulator - Node-RED - Introduction
 
 This tutorial demonstrates how to connect a simulated device to the Watson IoT platform, visualize its live data, store its data into a database and leverage [Node-RED](http://www.nodered.org){:target="_blank"} tool for wiring together hardware devices, APIs and online services.
 
@@ -38,9 +38,9 @@ This way, we don't require an actual hardware device to test our application.
 
     ![IoT Quickstart](./images/iot-quickstart.png)
 
-1. Enter the device id. 
+1. Enter the device id.
 
-1. Vizualise the live sensor data and play with the dynamic graph. 
+1. Vizualise the live sensor data and play with the dynamic graph.
 
 
 # Connect your device to the Watson IoT Platform
@@ -94,15 +94,15 @@ The second one that can process temperature readings from the Watson IoT platfor
 1. Look for the **Deploy** button in the upper right hand corner of your Node-RED workspace. The deploy button is now red; click it to deploy your flow.
 
     ![Node-RED Deploy](./images/nodered-deploy.png)
- 
+
 1. Open the debug pane on the right. You will see that the flow is generating Temperature Status messages.
 
-1. Increase the temperature value on the simulator to see the messages change in the debug pane. 
+1. Increase the temperature value on the simulator to see the messages change in the debug pane.
 <br /> *Note that a different message appears if the temperature exceeds 40 degrees.*
 
 # Store the device data into a No SQL database
 
-1. In Node-RED flow editor, add a **Cloudant out** node 
+1. In Node-RED flow editor, add a **Cloudant out** node
 
     ![Cloudant out node](./images/nodered-cloudant.png)
 
@@ -137,7 +137,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Now you are going to register a device. Click "Register Devices"
 
-    <img src="./images/register-device.png" width="40%"/> 
+    <img src="./images/register-device.png" width="40%"/>
 
 1. Enter a device ID: "LivingRoomThermo1". Click Next, Next
 
@@ -145,9 +145,9 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 1. Click "Done"
 
-1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds): 
+1. Go to Node-RED, open and modify the inject node to publish events continuously (repeat -> onterval -> every 3 seconds):
 
-    <img src="./images/repeat-inject.png" width="40%"/> 
+    <img src="./images/repeat-inject.png" width="40%"/>
 
 1. You can see events in the Watson IoT dashboard
 
@@ -158,7 +158,7 @@ The first flow simulate a device publishing an event. To visualize the data in y
 
 The warning messages generated in Node-RED uses English by default. You may want to translate those messages into your oww language.
 
-1. In the IBM Cloud Platform console, create a new service **Language Translator** (from the catalog) 
+1. In the IBM Cloud Platform console, create a new service **Language Translator** (from the catalog)
 
     ![Watson Language Translator catalog](./images/translator-catalog.png)
 
@@ -172,7 +172,7 @@ The warning messages generated in Node-RED uses English by default. You may want
 
     ![Watson Language Translator](./images/nodered-translationflow.png)
 
-1. Deploy the updated flow. 
+1. Deploy the updated flow.
 
 1. Observe the translated output based on the selected language.
 
@@ -182,4 +182,3 @@ The warning messages generated in Node-RED uses English by default. You may want
 For additional resources pay close attention to the following:
 
 - [Real Time Data Analysis Using IoT Platform Analytics](https://developer.ibm.com/recipes/tutorials/real-time-data-analysis-using-ibm-watson-iot-platform-analytics){:target="_blank"}
-

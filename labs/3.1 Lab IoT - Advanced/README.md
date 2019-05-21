@@ -1,6 +1,6 @@
 ![](./images/iotp_icon_64.png)
 
-# 4.2 Lab IoT - Dashboard Nodes - Introduction
+# 3.1 Lab IoT - Dashboard Nodes - Introduction
 
 With Node-RED you have access to a large set of nodes librairies. You will learn here how to use the Node-RED dashboard nodes.
 
@@ -21,8 +21,7 @@ With Node-RED you have access to a large set of nodes librairies. You will learn
 
     ![flow dashboard](./images/flow-dashboard.png)
 
-4. Deploy. You can notice a new tab next to the dashboard tab. It is your dashboard management. 
+4. Deploy. You can notice a new tab next to the dashboard tab. It is your dashboard management.
 5. You can open the dashboard in your browser :
 
     ![visu](./images/visualize.png)
-
