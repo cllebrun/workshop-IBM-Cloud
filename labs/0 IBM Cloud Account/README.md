@@ -1,7 +1,7 @@
 
 # Create an IBM Cloud account in the US region
 
-+ Create an [IBM Cloud account](http://ibm.biz/masterclass_ibmcloud
++ Create an [IBM Cloud account](http://cloud.ibm.com/registration
 ) in the **US region**. You need an email address.
 
 <img src="./images/cloud-registration.gif"/>
