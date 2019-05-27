@@ -85,11 +85,18 @@ This will create for you a Continuous Delivery service in order to access **Git 
 
     <img src="./images/default-toolchain.png" />
 
-14. Let's check the different tools. Click on the Git tool to have a look:
+14. Let's check the different tools. Click right on the Git tool and select **"open link in a new tab"** to have a look:
 
   <img src="./images/git.png" />
 
-Note your repository has been cloned as an IBM Cloud Project.
+Note your repository has been cloned as a private IBM Cloud Project.
+
+You can give access to this project by adding Members (Members -> Invite Member).
+
+15. Go back to your tools switching of tabs.
+
+  <img src="./images/tabs.png" />
+
 
 12. If it’s the first time you use the continuous delivery toolchain, it ask to create the toolchain. Make sure to be localized in the US-south region and click "Create".
 13. Access the online editor "Eclipse Orion Web IDE":
