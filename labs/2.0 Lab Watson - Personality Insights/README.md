@@ -1,6 +1,6 @@
 ![](.//media/image1.png)
 
-# IBM Watson Personality Insights
+# 2.0 Lab Watson - Personality Insights
 
 Objective
 =========
@@ -25,9 +25,9 @@ person\'s unstructured text.
 The quick demo application allows to analyze text from three sources:
 
 -   Tweets and replies from several people (Oprah Winfrey, LeBron James, Don Francisco, Pope Francis, Mohamed Aboutrika, Sefat Farid Yu Darvish and Sandara Park)
-  
+
 -   Text from several people (Barack Obama, Gandhi and Natsume Soseki) or your own text (more than 100 words)
-  
+
 -   Your own tweets and replies
 
 For tweets and replies analysis, first select a twitter account and click on the Analyze button.
@@ -54,20 +54,20 @@ Here is the list of the consumption preferences returned by the service:
 
 -   Shopping preferences: Shopping preferences indicate the author\'s interest in different types of purchases, the extent to which the author\'s purchasing habits are influenced by different external
     sources, and the author\'s spending habits. This category has 12 preferences.
-    
+
 -   Movie preferences: Movie preferences indicate the author\'s interest in different types of movies. This category has 10 preferences.
-  
+
 -   Music preferences: Music preferences indicate the author\'s interest in different types of music and whether the author enjoys playing music. This category has nine preferences.
-  
+
 -   Reading and learning preferences: Reading and learning preferences indicate the author\'s likelihood to read, the author\'s motivation for reading, and the types of content the author enjoys reading.
     This category has five preferences.
-    
+
 -   Health and activities preferences: Health and activity preferences indicate the author\'s interest in healthy foods and physical activity. This category has three preferences.
-  
+
 -   Entrepreneurship preferences: Entrepreneurship preferences indicate the author\'s interest in starting a business. This category has one preference.
-  
+
 -   Environmental concern preferences: Environmental concern preferences indicate the author\'s interest in the environment. This category has one preference.
-  
+
 -   Volunteering preferences: Volunteering preferences indicate the author\'s interest in volunteering for social causes. This category has one preference.
 
 Here is a table summarizing the consumption preferences:
@@ -140,7 +140,7 @@ For each dimension you can get details by clicking on the arrow sign next to it.
 3.  Values transcend specific actions and situations.
 
 4.  Values guide the selection or evaluation of actions, policies, people, and events.
-  
+
 5.  Values vary by relative importance and can be ranked by importance.
 
 The service computes the five basic human values that were proposed by Schwartz and that were validated in more than twenty countries(Schwartz, 1992).
@@ -183,10 +183,10 @@ Copy the credentials to authenticate to your service instance
 1.  On the Personality Insights service dashboard page, click on Manage.
 
 2.  On the Manage page, click **Show Credentials** to view your credentials.
-  
+
 
 ![](.//media/image11.png){width="6.5in" height="3.65625in"}
-    
+
 3.  Copy the API Key and URL values.
 
 Curl command
@@ -208,16 +208,16 @@ Send plain text input and receive basic JSON output
 This first example passes the plain text file profile.txt to the POST /v3/profile method and requests a JSON response.
 
 1.  Download the sample file [profile.txt](https://watson-developer-cloud.github.io/doc-tutorial-downloads/personality-insights/profile.txt)
-  
+
 2.  Issue the following command to send the file to the /v3/profile method and request a JSON response.
-  
+
 
 a.  The Content-Type header specifies that the input is plain text, text/plain. The charset parameter included with the header identifies the character encoding of the input text.
-    
+
     b.  The Accept header specifies application/json to indicate that JSON output is requested.
 
 c.  Replace {apikey} and {url} with your information.
-    
+
     d.  Modify {path\_to\_file} to specify the location of the profile.txt file.
 
 Linux version of the command:
@@ -243,10 +243,10 @@ Send JSON input and receive detailed JSON output
 In this example, a JSON file is passed to the /v3/profile method, again requesting a JSON response. The example requests consumption preferences and raw scores for a more detailed analysis of the input.
 
 1.  Download the sample file [profile.json](https://watson-developer-cloud.github.io/doc-tutorial-downloads/personality-insights/profile.json). This file contains a collection of Twitter messages.
-  
+
 2.  Issue the following command to send the file to the /v3/profile method. The example specifies application/json for the Content-Type and Accept headers; the charset parameter is not needed for JSON input. The example sets the consumption\_preferences and raw\_scores query parameters to true.
-  
-    
+
+
 
 Linux version of the command:
 

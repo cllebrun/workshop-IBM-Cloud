@@ -8,11 +8,13 @@ A set of labs to get started with the IBM Cloud Platform !
 
 + [1.0 Lab Cloud - Developer tools](./labs/1.0%20Lab%20Cloud%20-%20Developer%20tools)
 
-+ [2.0 Lab Watson - Personality Insights & Tone Analyzer](./labs/2.0%20Lab%20Watson%20-%20Personality%20Insights%20&%20Tone%20Analyzer)
++ [2.0 Lab Watson - Personality Insights](./labs/2.0%20Lab%20Watson%20-%20Personality%20Insights)
 
-+ [2.1 Lab Watson - Watson Assistant](./labs/2.1%20Lab%20Watson%20-%20Watson%20Assistant)
++ [2.1 Lab Watson - Tone Analyzer](./labs/2.1%20Lab%20Watson%20-%20Tone%20Analyzer)
 
-+ [2.2 Lab Watson - Watson Visual Recognition](./labs/2.2%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
++ [2.2 Lab Watson - Watson Assistant](./labs/2.2%20Lab%20Watson%20-%20Watson%20Assistant)
+
++ [2.3 Lab Watson - Watson Visual Recognition](./labs/2.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
 
 + [3.0 Lab IoT - Simulator - Node-RED](./labs/3.0%20Lab%20IoT%20-%20Simulator%20-%20Node-RED)
 

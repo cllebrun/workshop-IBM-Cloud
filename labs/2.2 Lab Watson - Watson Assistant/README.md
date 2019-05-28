@@ -1,6 +1,6 @@
 ![](./media/image1.png)
 
-# IBM Watson Assistant
+# 2.3 Lab Watson - Assistant
 
 Overview
 ========
@@ -18,7 +18,7 @@ Objectives
 In this lab, you will:
 
 -   Learn how to use the IBM Cloud web user interface to create and manage Watson services
-  
+
 -   Learn how to build and train your chatbot with the Watson Assistant tool
 
 Prerequisites
@@ -51,7 +51,7 @@ Getting started with IBM Watson Assistant
 1.  Log in to IBM Cloud credentials. This should be your IBM ID.
 
 2.  You should start on your dashboard that contains metrics related to your IBM Cloud activities.
-  
+
 3.  Click on the **Catalog** tab (up and right) to access the Catalog of resources you can consume on IBM Cloud:
 
 ![](.//media/image3.png){width="6.5in" height="0.6715277777777777in"}
@@ -104,10 +104,10 @@ use case. An intent is the purpose or goal of a user's input.
 
 1.  First, you will need to define some intents to help control the flow of your dialog. An
     [intent](https://console.bluemix.net/docs/services/conversation/intents.html#defining-intents) is the purpose or goal of a user's input. In other words, Watson will use natural language processing to recognize the intent of the user's question / statement to help it select the
-    corresponding dialog branch for your automated conversation. 
-    
+    corresponding dialog branch for your automated conversation.
+
     Click on **Add intent**.
-    
+
     ![](.//media/image10.png){width="6.5in"
     height="3.8402777777777777in"}
 
@@ -126,7 +126,7 @@ use case. An intent is the purpose or goal of a user's input.
 height="4.154608486439195in"}
 
 4.  When finished, click on the arrow Icon (top left side of the window) to go back to list of existing intents.
-  
+
 
 At this point, you have defined one intent for the application along with the example utterances that will help train Watson to recognize and control the conversation flow.
 
@@ -266,10 +266,10 @@ An entity is the portion of the user's input that you can use to provide a diffe
     height="1.5614326334208224in"}
 
 2.  As you did for intent create your first entity with the following information
-  
+
 
 In these labs, several intents will indicate that the user are looking for a restaurant. So, you will need to create a new entity representing restaurant categories. You will then provide values (and possibly synonyms) for the various types. (Enter multiple examples by pressing "Enter" or clicking the **plus sign** at the end of the line.)
-    
+
     ![](.//media/image29.png){width="6.263888888888889in"
     height="1.617361111111111in"}
 
@@ -299,9 +299,9 @@ In order to import a file successfully, it must include a minimum of two columns
     height="2.662790901137358in"}
 
     > **Note**: Notice that the Conversation tooling did not import any questions that were exact duplicates of questions that you manually entered. So the existing restaurant entity name were ignored.
-    
+
 8.  Test your entities: open the **try it out** panel, wait until Watson is done training.
-  
+
 9.  Type `where is the bike`?
 
     ![](.//media/image33.png){width="3.3297648731408573in"
@@ -341,25 +341,25 @@ you define a contextual entity, a model is trained on both the entity *value* an
 14. Open **Try it out** panel.
 
 15. Enter `I want a pizza with more olives and without anchovy` at the bottom of the chat window.
-  
+
 
 The bot understands the `#order_pizza` intend and the entities `@pizza_toppings` and `@pizza_notoppings` but it can't determine what the user want and don't want!
-    
+
     ![](.//media/image37.png){width="3.883720472440945in"
     height="2.4959372265966753in"}
-    
+
     Watson needs to know the context. We are going to annotate the user's example to identify where the entities are used.
 
 16. Go to **intents** tab and select `#Order_pizza`
 
 17. In the 4th example, highlight the group `red peppers` the enter `@pizza_toppings`
-  
+
 
 ![](.//media/image38.png){width="4.272107392825896in"
     height="1.9702843394575678in"}
-    
+
 We identify the toppings requested by the user.
-    
+
 18. Annotate the other entities like below.
 
     ![](.//media/image39.png){width="6.263888888888889in"
@@ -388,18 +388,18 @@ If we open the **entity** *@pizza_notoppings*, and the **Annotation** tab, we re
 You will need to enable system entity. These entities can be used to help clarify a user's questions/phrases.
 
 22. If not already there, click the **Entities** and **System entities** tab.
-  
+
 
 ![](.//media/image43.png){width="6.5in"
     height="1.5006944444444446in"}
-    
+
 23. Switch on all system entities.
 
     ![](.//media/image44.png){width="6.83406605424322in"
     height="2.7058814523184602in"}
 
 24. Test System Entities: Open the **try it out** panel, wait until Watson is done training.
-  
+
 25. Type *`Is the gym open at 6am tomorrow?`*
 
     ![](.//media/image45.png){width="3.1331277340332457in"
@@ -477,14 +477,14 @@ You can create a dialog branch for each of the intents you identified as well as
 > **Note**: When you click on add node button at the top of the tab. The node will be added below the selected node. So best way to add correctly a node is to use the **node menu.**
 
 5.  Click **Add node below** on the **Start of the conversation** node menu
-  
+
 
 ![](.//media/image51.png){width="3.696078302712161in"
     height="0.8829527559055118in"}
-    
+
 ![](.//media/image52.png){width="4.419431321084865in"
     height="3.352818241469816in"}
-    
+
 6. In this new node, enter the following values. By setting the condition to an intent, you are indicating that this node will be triggered by any input that matches the specified intent.
 
 | Field                   | Value                      |
@@ -522,10 +522,10 @@ height="3.910825678040245in"}
 1.  Open **Try it out** panel.
 
     A test user interface will immediately launch and, based off the root node you just created, provide a greeting to the end user. (You may see a message that Watson is being trained.)
-    
+
     ![](.//media/image55.png){width="3.2324146981627297in"
 height="0.8496631671041119in"}
-    
+
 2.  Enter `Hi` at the bottom of the chat window.
 
     The bot understands the \#General\_greetings intend and send you
@@ -577,16 +577,16 @@ height="1.6944444444444444in"}
 4.  Click **Add Dialog Skill**
 
 5.  Select **Add existing skill** then select the skill you have previously created
-  
+
 
 Now your assistant is ready to use.
-    
+
 6.  You are going to review the sample UI to test your assistant. Click **Preview Link** tile.
-  
+
 
 ![](.//media/image63.png){width="6.5in"
     height="2.2194444444444446in"}
-    
+
 7.  You can use the URL link to test your Assistant. Click on the hyper
     link
 
