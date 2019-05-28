@@ -12,6 +12,7 @@ A set of labs to get started with the IBM Cloud Platform !
 
 + [2.1 Lab Watson - Tone Analyzer](./labs/2.1%20Lab%20Watson%20-%20Tone%20Analyzer)
 
+
 + [2.2 Lab Watson - Watson Assistant](./labs/2.2%20Lab%20Watson%20-%20Watson%20Assistant)
 
 + [2.3 Lab Watson - Watson Visual Recognition](./labs/2.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition)
