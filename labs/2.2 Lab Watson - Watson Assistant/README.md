@@ -1,6 +1,6 @@
 ![](./media/image1.png)
 
-# 2.3 Lab Watson - Assistant
+# 2.2 Lab Watson - Assistant
 
 Overview
 ========
