@@ -146,8 +146,8 @@ Best of all, the Web IDE is powered by the web. You have nothing to install, not
 21. Let's change the code. Line 9, replace "World" by your own name:
 
 ```  
-          <h1 id="message">Hello Clem!</h1>
-          ```
+  <h1 id="message">Hello Clem!</h1>
+```
 22. Save!
 
   <img src="./images/save.png" />
@@ -195,7 +195,7 @@ With a delivery pipeline, you can automate the continuous building, testing, and
 
 The Build stage pulls the source code from your repository. It then runs jobs to compile or otherwise process the code to produce artifacts suitable for deployment. Each job runs in its own container. The artifacts are passed to follow-on stages through the build archive directory in the container. By default, this directory is the same as the directory where the source code was checked out. The Simple build job type passes the source code from your repo on as the result without modifying it.
 
-The Deploy stage contains jobs that deploy the artifacts created by the Build stage. For Cloud Foundry apps, if a manifest file exists in the root folder, it is used to determine which buildpack to use. 
+The Deploy stage contains jobs that deploy the artifacts created by the Build stage. For Cloud Foundry apps, if a manifest file exists in the root folder, it is used to determine which buildpack to use.
 
 29. Go back to your **Delivery Pipeline** tab.
 
