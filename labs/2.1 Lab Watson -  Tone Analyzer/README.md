@@ -1,6 +1,6 @@
 ![](.//media/image1.png)
 
-# 2.1 Lab Watson - Watson Tone Analyzer
+# 2.1 Lab Watson - Tone Analyzer
 
 Objective
 =========
