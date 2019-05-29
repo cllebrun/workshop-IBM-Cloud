@@ -78,13 +78,13 @@ Log in and create the service
 
 5.  Click on Tone Analyzer.
 
-![](.//media/image5.png)
+  ![](.//media/image5.png)
 
 6.  Select the Lite plan and click on Create.
 
 7.  You get to the Tone Analyzer created service dashboard.
 
-![](.//media/image6.png)
+  ![](.//media/image6.png)
 
 Copy the credentials to authenticate to your service instance
 -------------------------------------------------------------
