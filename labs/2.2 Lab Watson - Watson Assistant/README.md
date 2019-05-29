@@ -37,7 +37,7 @@ made available in IBM Cloud. So, before you can begin building cognitive applica
 
 > **Please, select "United States" as Region:**
 >
-> ![](.//media/image2.png){width="6.5in" height="0.8534722222222222in"}
+> ![](.//media/image2.png)
 >
 > You will need to confirm your registration when receiving an email from the IBM Cloud team.
 
@@ -54,11 +54,11 @@ Getting started with IBM Watson Assistant
 
 3.  Click on the **Catalog** tab (up and right) to access the Catalog of resources you can consume on IBM Cloud:
 
-![](.//media/image3.png){width="6.5in" height="0.6715277777777777in"}
+![](.//media/image3.png)
 
 4.  Select the **AI** category. This is the list of Watson APIs and other AI services you can access to. Select the **Watson Assistant** service.
 
-![](.//media/image4.png){width="6.5in" height="4.283333333333333in"}
+![](.//media/image4.png)
 
 5.  A default name is given, you can change it if you like. Leave the Resource group as default, depending of your previous activitie with your IBM Cloud account you may have a different name as the
     selected resource group. Select the Dallas region if you have the choice, if not, leave it as default.
@@ -67,12 +67,12 @@ Getting started with IBM Watson Assistant
 
  Click **Create**.
 
-![](.//media/image5.png){width="6.5in" height="4.903472222222222in"}
+![](.//media/image5.png)
 
  Note that you get an API Key and a URL for your service. With these credentials you can call your service from any web or mobile application. If you click on API reference, you get several examples
  on how to use the API.
 
- ![](.//media/image6.png){width="6.5in" height="2.651388888888889in"}
+ ![](.//media/image6.png)
 
 Create your first Skill
 =======================
@@ -82,18 +82,18 @@ You will create these items in a Skill. A Skill is a container for the artefacts
 
 1.  Click on the **Launch tool** button to open the Watson Assistant tooling:
 
-![](.//media/image7.png){width="6.5in" height="2.8833333333333333in"}
+![](.//media/image7.png)
 
 2.  From the home page of the Watson Assistant tool, at the bottom,
     click **Create a Skill**.
 
-![](.//media/image8.png){width="6.5in" height="3.0076388888888888in"}
+![](.//media/image8.png)
 
 3. Skill enables you to maintain separate intents, user examples, entities, and dialogs for each application. Click **Create new**.
 
 4. Give it a name and chose **English** as language. Click **Create**.
 
-![](.//media/image9.png){width="6.5in" height="4.572916666666667in"}
+![](.//media/image9.png)
 
 Intents
 =======
@@ -108,13 +108,11 @@ use case. An intent is the purpose or goal of a user's input.
 
     Click on **Add intent**.
 
-    ![](.//media/image10.png){width="6.5in"
-    height="3.8402777777777777in"}
+    ![](.//media/image10.png)
 
 2. Enter `hotel_locations` as Intent name then click **Create intent**
 
-    ![](.//media/image11.png){width="6.263888888888889in"
-    height="2.8513888888888888in"}
+    ![](.//media/image11.png)
 
 3. Enter the examples as defined below in the **Add user examples** field and click **Add example** button after each of them. The user examples are phrases that will help Watson recognize the new intent.
 
@@ -122,8 +120,7 @@ use case. An intent is the purpose or goal of a user's input.
 
 
 
-![](.//media/image12.png){width="3.832147856517935in"
-height="4.154608486439195in"}
+![](.//media/image12.png)
 
 4.  When finished, click on the arrow Icon (top left side of the window) to go back to list of existing intents.
 
@@ -136,8 +133,7 @@ Intents can be imported into the Watson Assistant tool using a Comma Separated V
 
 5.  Click Import
 
-    ![](.//media/image13.png){width="6.5in"
-    height="1.4131944444444444in"}
+    ![](.//media/image13.png)
 
     Drag `WA_intents.csv` into the **Choose a file** box or click **Choose a file** to browse your computer.
 
@@ -145,8 +141,7 @@ Intents can be imported into the Watson Assistant tool using a Comma Separated V
 
 So all existing utterances of hotel\_locations were ignored:
 
-![](.//media/image14.png){width="4.713485345581803in"
-height="2.5229166666666667in"}
+![](.//media/image14.png)
 
 Click **Done.** Let's now test your intents.
 
@@ -154,13 +149,13 @@ Click **Done.** Let's now test your intents.
 
 When WA is training on recently added data. You must wait for the message highlighted with purple to clear before you can test newly added intents, utterances, entities. Watson will respond, but you will get unpredictable results until the training is complete.
 
-![](.//media/image15.png){width="2.9262992125984253in"
-height="1.4313418635170603in"}\_![](.//media/image16.png){width="3.1051202974628174in"
-height="1.4880500874890639in"}
+![](.//media/image15.png)
+
+![](.//media/image16.png)
 
 6.  Open the **try it** panel by clicking on the following icon (upper right):
 
-![](.//media/image17.png){width="6.5in" height="0.7611111111111111in"}
+![](.//media/image17.png)
 
 You cannot perform the **Try it out** activities in this section until Watson has finished training on your recent changes. When Watson is finished, the purple box with the text, "Watson is training" will no longer appear in your \"Try it out\" panel. You may also notice a message stating that, \"Watson has finished training!\".
 
@@ -172,13 +167,11 @@ Let's change the intent for the user example.
 
 8.  Click the arrow next to *\#hotel\_locations*
 
-![](.//media/image18.png){width="3.4773490813648293in"
-height="1.2904615048118986in"}
+![](.//media/image18.png)
 
 9.  Type *hotel\_info*
 
-![](.//media/image19.png){width="2.395145450568679in"
-height="2.2609044181977254in"}
+![](.//media/image19.png)
 
 10. Select the intent ***\#hotel\_info*** that appears in the drop-down box
 
@@ -190,8 +183,7 @@ Your try it out panel will show a message similar to "Watson is training"
 
 **Note:** Notice that Watson assigns this question the intent \#Local\_recommend. This intent is meant for questions that refer to finding recommendation for sightseeing or restaurant. In this case, the user wants to eat something.
 
-![](.//media/image20.png){width="3.127925415573053in"
-height="0.9869280402449694in"}
+![](.//media/image20.png)
 
 Let's change the intent for the user example, this time by using the search capability of the engine.
 
@@ -201,37 +193,31 @@ Let's change the intent for the user example, this time by using the search capa
 
 The solution returns all intents including the 'eat' word.
 
-![](.//media/image21.png){width="2.4496358267716536in"
-height="3.4158497375328083in"}
+![](.//media/image21.png)
 
 14. As you are looking for a user example which belongs to \#local\_recommend, expand it.
 
-![](.//media/image22.png){width="2.648148512685914in"
-height="3.0604352580927383in"}
+![](.//media/image22.png)
 
 15. The last one looks like the one we used during the test, click on it.
 
 Watson opens a right page and highlight the right user example.
 
-![](.//media/image23.png){width="4.166666666666667in"
-height="2.1805555555555554in"}
+![](.//media/image23.png)
 
 16. Select it, click on **Move**
 
-![](.//media/image24.png){width="4.555555555555555in"
-height="1.087455161854768in"}
+![](.//media/image24.png)
 
 17. Enter **eat** as intent
 
-![](.//media/image25.png){width="3.9027777777777777in"
-height="2.0555555555555554in"}
+![](.//media/image25.png)
 
 18. Click on **Move**
 
 **Note**: Now, your user example is move on the right intent and if you will do a new test the system returns the right intent.
 
-![](.//media/image26.png){width="2.8223458005249342in"
-height="0.9407819335083114in"}
+![](.//media/image26.png)
 
 You have seen two options to improve the Watson classification
 
@@ -248,7 +234,7 @@ You are going to add general conversation topics intents.
 
 1.  On the **Content Catalog** tab, click **Add** **to skill** to add General category intents.
 
-![](.//media/image27.png){width="6.5in" height="3.854861111111111in"}
+![](.//media/image27.png)
 
 2.  Go back to **Intents** tab, we will find new intents prefix by *#general\_*
 
@@ -262,20 +248,18 @@ An entity is the portion of the user's input that you can use to provide a diffe
 
 1.  Select the Entities tab. Click **Add entity**.
 
-    ![](.//media/image28.png){width="3.7447812773403326in"
-    height="1.5614326334208224in"}
+    ![](.//media/image28.png)
 
 2.  As you did for intent create your first entity with the following information
 
 
 In these labs, several intents will indicate that the user are looking for a restaurant. So, you will need to create a new entity representing restaurant categories. You will then provide values (and possibly synonyms) for the various types. (Enter multiple examples by pressing "Enter" or clicking the **plus sign** at the end of the line.)
 
-    ![](.//media/image29.png){width="6.263888888888889in"
-    height="1.617361111111111in"}
+    ![](.//media/image29.png)
 
 ![1558618164957](media/1558618164957.png)
 
-![](.//media/image30.png){width="6.5in" height="2.951388888888889in"}
+![](.//media/image30.png)
 
 3.  Enable the **Fuzzy Matching** option
 
@@ -290,13 +274,11 @@ In order to import a file successfully, it must include a minimum of two columns
 6.  Drag `WA_entities.csv` into the **Choose a file** box or click
     **Choose a file** to browse your computer.
 
-    ![](.//media/image31.png){width="4.3691929133858265in"
-    height="2.053811242344707in"}
+    ![](.//media/image31.png)
 
 7.  Click **Import**
 
-    ![](.//media/image32.png){width="4.355099518810149in"
-    height="2.662790901137358in"}
+    ![](.//media/image32.png)
 
     > **Note**: Notice that the Conversation tooling did not import any questions that were exact duplicates of questions that you manually entered. So the existing restaurant entity name were ignored.
 
@@ -304,16 +286,14 @@ In order to import a file successfully, it must include a minimum of two columns
 
 9.  Type `where is the bike`?
 
-    ![](.//media/image33.png){width="3.3297648731408573in"
-    height="1.3105489938757655in"}
+    ![](.//media/image33.png)
 
 > **Note:** Notice that Watson has identified the term *bike* with the correct intent, entity, and entity value
 > (*@entity\_name:entity\_value)*.
 
 10. Type `where are the bikes`?
 
-    ![](.//media/image34.png){width="3.409877515310586in"
-    height="1.069368985126859in"}
+    ![](.//media/image34.png)
 
 > **Note:** Notice that Watson does not identify *bikes* the same as it identified *bike. *This is because entity matching is brute-force rules-based string matching without fuzzy matching.
 
@@ -321,13 +301,11 @@ Let's turn on fuzzy matching to see how it improves entity recognition.
 
 11. Open the Hotel\_amenity entity and turn on **Fuzzy Matching**.
 
-    ![](.//media/image35.png){width="6.5in"
-    height="1.398611111111111in"}
+    ![](.//media/image35.png)
 
 12. When Watson is done training, type *where are the bikes?*
 
-![](.//media/image36.png){width="3.1164348206474193in"
-height="1.1801891951006125in"}
+![](.//media/image36.png)
 
 **Note**: notice that the correct *@entity name:entity value* pair is now recognized for *bikes*.
 
@@ -345,8 +323,7 @@ you define a contextual entity, a model is trained on both the entity *value* an
 
 The bot understands the `#order_pizza` intend and the entities `@pizza_toppings` and `@pizza_notoppings` but it can't determine what the user want and don't want!
 
-    ![](.//media/image37.png){width="3.883720472440945in"
-    height="2.4959372265966753in"}
+    ![](.//media/image37.png)
 
     Watson needs to know the context. We are going to annotate the user's example to identify where the entities are used.
 
@@ -355,33 +332,29 @@ The bot understands the `#order_pizza` intend and the entities `@pizza_toppings`
 17. In the 4th example, highlight the group `red peppers` the enter `@pizza_toppings`
 
 
-![](.//media/image38.png){width="4.272107392825896in"
-    height="1.9702843394575678in"}
+![](.//media/image38.png)
 
 We identify the toppings requested by the user.
 
 18. Annotate the other entities like below.
 
-    ![](.//media/image39.png){width="6.263888888888889in"
-    height="8.9in"}
+    ![](.//media/image39.png)
 
 We are now going to identify the toppings not requested by the user.
 
 19. Annotate the intent using `@pizza_notoppings` entities like below.
 
-    ![](.//media/image40.png){width="6.263888888888889in"
-    height="8.604166666666666in"}
+    ![](.//media/image40.png)
 
 20. Open **Try it out** panel.
 
 21. Enter I want a pizza with more olives and without anchovy
 
-    ![](.//media/image41.png){width="3.965115923009624in"
-    height="1.6705818022747156in"}
+    ![](.//media/image41.png)
 
 If we open the **entity** *@pizza_notoppings*, and the **Annotation** tab, we retrieve the annotated examples.
 
-![](.//media/image42.png){width="6.5in" height="4.928472222222222in"}
+![](.//media/image42.png)
 
 **Enable system entities**
 
@@ -390,20 +363,17 @@ You will need to enable system entity. These entities can be used to help clarif
 22. If not already there, click the **Entities** and **System entities** tab.
 
 
-![](.//media/image43.png){width="6.5in"
-    height="1.5006944444444446in"}
+![](.//media/image43.png)
 
 23. Switch on all system entities.
 
-    ![](.//media/image44.png){width="6.83406605424322in"
-    height="2.7058814523184602in"}
+    ![](.//media/image44.png)
 
 24. Test System Entities: Open the **try it out** panel, wait until Watson is done training.
 
 25. Type *`Is the gym open at 6am tomorrow?`*
 
-    ![](.//media/image45.png){width="3.1331277340332457in"
-    height="1.803921697287839in"}
+    ![](.//media/image45.png)
 
 > **Note**: notice that the time and date are recognized
 >
@@ -413,8 +383,7 @@ You will need to enable system entity. These entities can be used to help clarif
 
 26. Type `Did the restaurant charge a 15% tip for a 20\$ bill today?`
 
-    ![](.//media/image46.png){width="5.597222222222222in"
-    height="4.625in"}
+    ![](.//media/image46.png)
 
 > **Note**: notice that the percentage, currency, number and date are
 > recognized. You can use these system entities in your dialog node
@@ -439,8 +408,7 @@ Each node has a node menu. This guide will go through most of the actions that 
 
 2.  Click on **Create**
 
-    ![](.//media/image47.png){width="6.5in"
-    height="4.253472222222222in"}
+    ![](.//media/image47.png)
 
     You can notice that Watson has created 2 nodes a "Welcome" and "anything\_else" nodes.
 
@@ -457,18 +425,15 @@ Each node has a node menu. This guide will go through most of the actions that 
 The panel that appears on the **right side of the screen** is the editor panel for the node. When you create a new node or when you click on  node to make edits, this panel will appear for the node that you click
 on. This is where all editing is done for the node. The image below explains the elements of the node editor. 
 
-![](.//media/image48.png){width="6.263888888888889in"
-height="4.149305555555555in"}
+![](.//media/image48.png)
 
 3.  Select **Welcome** node to edit it and fill it as below
 
-    ![](.//media/image49.png){width="6.425925196850394in"
-    height="3.9930500874890638in"}
+    ![](.//media/image49.png)
 
 4.  Select the **anything\_else** node, 3 responses are pre-created.
 
-    ![](.//media/image50.png){width="6.263888888888889in"
-    height="4.563194444444444in"}
+    ![](.//media/image50.png)
 
 **Create your first nodes**
 
@@ -479,11 +444,9 @@ You can create a dialog branch for each of the intents you identified as well as
 5.  Click **Add node below** on the **Start of the conversation** node menu
 
 
-![](.//media/image51.png){width="3.696078302712161in"
-    height="0.8829527559055118in"}
+![](.//media/image51.png)
 
-![](.//media/image52.png){width="4.419431321084865in"
-    height="3.352818241469816in"}
+![](.//media/image52.png)
 
 6. In this new node, enter the following values. By setting the condition to an intent, you are indicating that this node will be triggered by any input that matches the specified intent.
 
@@ -493,8 +456,7 @@ You can create a dialog branch for each of the intents you identified as well as
 | **If bot   recognizes** | #General_Greetings         |
 | **Watson   responses**  | Hi! What can I do for you? |
 
-![](.//media/image53.png){width="4.2962959317585305in"
-height="0.9645231846019248in"}
+![](.//media/image53.png)
 
 **Note**: The figure above indicates that there is only one condition that is evaluated, one response and zero variable context used.
 
@@ -516,42 +478,36 @@ Test your conversation
 
 Now, you should have a dialog with four nodes.
 
-![](.//media/image54.png){width="3.9957786526684163in"
-height="3.910825678040245in"}
+![](.//media/image54.png)
 
 1.  Open **Try it out** panel.
 
     A test user interface will immediately launch and, based off the root node you just created, provide a greeting to the end user. (You may see a message that Watson is being trained.)
 
-    ![](.//media/image55.png){width="3.2324146981627297in"
-height="0.8496631671041119in"}
+    ![](.//media/image55.png)
 
 2.  Enter `Hi` at the bottom of the chat window.
 
     The bot understands the \#General\_greetings intend and send you
     back the right response.
 
-    ![](.//media/image56.png){width="3.1666666666666665in"
-    height="1.5062084426946631in"}
+    ![](.//media/image56.png)
 
 3.  Enter `When is the fitness center open?`
 
-    ![](.//media/image57.png){width="3.0568077427821523in"
-    height="1.6157414698162729in"}
+    ![](.//media/image57.png)
 
 > **Note**: Watson should return the response that is matched to #hotel\_hours and @hotel\_amenity:gym
 
 4.  Enter `When is the store open?`
 
-    ![](.//media/image58.png){width="3.4219903762029746in"
-    height="1.4538517060367455in"}
+    ![](.//media/image58.png)
 
 > **Note**: Watson understood the intent \#hotel\_hours. But as *store* is not defined as value of any entities, the system returns the answer without @hotel\_amenity value. Another lab is covering how to improve the WA behavior to manage such behavior.
 
 5.  Enter `abcdefg`
 
-    ![](.//media/image59.png){width="3.394212598425197in"
-    height="1.4034722222222222in"}
+    ![](.//media/image59.png)
 
     Watson cannot identify anything and executes the **anything\_else** node.
 
@@ -562,17 +518,15 @@ An Assistant is a virtual container to which you add your skills that enables it
 
 1.  Click on the arrow to go back to the Watson Assistant menu and switch from the Skill tab to the **Assistant tab**
 
-![](.//media/image60.png){width="5.736111111111111in"
-height="1.6944444444444444in"}
+![](.//media/image60.png)
 
 2.  Click **Create New**
 
-    ![](.//media/image61.png){width="6.5in"
-    height="0.9104166666666667in"}
+    ![](.//media/image61.png)
 
 3.  Give it a name and click **Create**.
 
-    ![](.//media/image62.png){width="6.5in" height="4.00625in"}
+    ![](.//media/image62.png)
 
 4.  Click **Add Dialog Skill**
 
@@ -584,16 +538,13 @@ Now your assistant is ready to use.
 6.  You are going to review the sample UI to test your assistant. Click **Preview Link** tile.
 
 
-![](.//media/image63.png){width="6.5in"
-    height="2.2194444444444446in"}
+![](.//media/image63.png)
 
 7.  You can use the URL link to test your Assistant. Click on the hyper
     link
 
-    ![](.//media/image64.png){width="5.5in"
-    height="3.8256102362204722in"}
+    ![](.//media/image64.png)
 
 8.  You can use the page to test your Assistant!
 
-    ![](.//media/image65.png){width="3.6033464566929134in"
-    height="4.019608486439195in"}
+    ![](.//media/image65.png)
