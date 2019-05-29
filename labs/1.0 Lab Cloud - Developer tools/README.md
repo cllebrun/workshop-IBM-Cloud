@@ -43,12 +43,12 @@ In the following lab, you will learn:
 
   <img src="./images/app-starting.png"/>
 
-7. You have created an Hello Worls basic Node.js web app. Let's have a look at it:
+7. You have created an Hello World basic Node.js web app. Let's have a look at it:
 Click on **"Visit App URL"** link to launch your app.
 
   <img src="./images/app-started.png"/>
 
-8. Congratulation! Your app is up and running!
+8. Congratulations! Your app is up and running!
 
   <img src="./images/app-run.png"/>
 
@@ -62,7 +62,7 @@ In this part, we will explore these developer tools integrated on the platform.
 A toolchain is a set of tool integrations that support development, deployment, and operations tasks. The collective power of a toolchain is greater than the sum of its individual tool integrations.
 
 
-9. Back on the platform tab, click on the **Overview** tab of your app,
+9. In your browser, switch back on the IBM Cloud tab, click on the **Overview** tab of your app,
 
   <img src="./images/app-overview.png" />
 
@@ -76,7 +76,7 @@ This will create for you a Continuous Delivery service in order to access **Git 
 
     <img src="./images/toolchain-options.png" />
 
-12. Create an **IBM Cloud API Key**
+12. Create an **IBM Cloud API Key** as default.
 
     <img src="./images/ibm-cloud-api-key.png" />
 
@@ -84,7 +84,7 @@ This will create for you a Continuous Delivery service in order to access **Git 
 
     <img src="./images/default-toolchain.png" />
 
-14. Let's check the different tools. Click right on the Git tool and select **"open link in a new tab"** to have a look:
+14. Let's check the different tools. Right click on the Git tool and select **"open link in a new tab"** to have a look:
 
   <img src="./images/git.png" />
 
@@ -115,7 +115,7 @@ A delivery pipeline automates the continuous deployment of a project. In a proje
 - Manifest files, which are named manifest.yml and stored in a project's root directory, control how your project is deployed to IBM Cloud.
 - You can use environment properties and preinstalled resources in pipelines. For example, you might incorporate them into a job script or test command.
 
-When you have create the toolchain, it created by default a delivery pipeline with two stages: build and deploy:
+It created by default a delivery pipeline with two stages: build and deploy:
 
   <img src="./images/default_pipeline.png" />
 
