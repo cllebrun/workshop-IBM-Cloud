@@ -54,11 +54,11 @@ Getting started with IBM Watson Assistant
 
 3.  Click on the **Catalog** tab (up and right) to access the Catalog of resources you can consume on IBM Cloud:
 
-![](.//media/image3.png)
+    ![](.//media/image3.png)
 
 4.  Select the **AI** category. This is the list of Watson APIs and other AI services you can access to. Select the **Watson Assistant** service.
 
-![](.//media/image4.png)
+    ![](.//media/image4.png)
 
 5.  A default name is given, you can change it if you like. Leave the Resource group as default, depending of your previous activitie with your IBM Cloud account you may have a different name as the
     selected resource group. Select the Dallas region if you have the choice, if not, leave it as default.
@@ -67,12 +67,12 @@ Getting started with IBM Watson Assistant
 
  Click **Create**.
 
-![](.//media/image5.png)
+  ![](.//media/image5.png)
 
  Note that you get an API Key and a URL for your service. With these credentials you can call your service from any web or mobile application. If you click on API reference, you get several examples
  on how to use the API.
 
- ![](.//media/image6.png)
+  ![](.//media/image6.png)
 
 Create your first Skill
 =======================
@@ -82,18 +82,18 @@ You will create these items in a Skill. A Skill is a container for the artefacts
 
 1.  Click on the **Launch tool** button to open the Watson Assistant tooling:
 
-![](.//media/image7.png)
+    ![](.//media/image7.png)
 
 2.  From the home page of the Watson Assistant tool, at the bottom,
     click **Create a Skill**.
 
-![](.//media/image8.png)
+    ![](.//media/image8.png)
 
 3. Skill enables you to maintain separate intents, user examples, entities, and dialogs for each application. Click **Create new**.
 
 4. Give it a name and chose **English** as language. Click **Create**.
 
-![](.//media/image9.png)
+  ![](.//media/image9.png)
 
 Intents
 =======
@@ -120,7 +120,7 @@ use case. An intent is the purpose or goal of a user's input.
 
 
 
-![](.//media/image12.png)
+    ![](.//media/image12.png)
 
 4.  When finished, click on the arrow Icon (top left side of the window) to go back to list of existing intents.
 
@@ -155,7 +155,7 @@ When WA is training on recently added data. You must wait for the message highli
 
 6.  Open the **try it** panel by clicking on the following icon (upper right):
 
-![](.//media/image17.png)
+    ![](.//media/image17.png)
 
 You cannot perform the **Try it out** activities in this section until Watson has finished training on your recent changes. When Watson is finished, the purple box with the text, "Watson is training" will no longer appear in your \"Try it out\" panel. You may also notice a message stating that, \"Watson has finished training!\".
 
@@ -167,11 +167,11 @@ Let's change the intent for the user example.
 
 8.  Click the arrow next to *\#hotel\_locations*
 
-![](.//media/image18.png)
+    ![](.//media/image18.png)
 
 9.  Type *hotel\_info*
 
-![](.//media/image19.png)
+    ![](.//media/image19.png)
 
 10. Select the intent ***\#hotel\_info*** that appears in the drop-down box
 
@@ -183,7 +183,7 @@ Your try it out panel will show a message similar to "Watson is training"
 
 **Note:** Notice that Watson assigns this question the intent \#Local\_recommend. This intent is meant for questions that refer to finding recommendation for sightseeing or restaurant. In this case, the user wants to eat something.
 
-![](.//media/image20.png)
+    ![](.//media/image20.png)
 
 Let's change the intent for the user example, this time by using the search capability of the engine.
 
@@ -193,31 +193,31 @@ Let's change the intent for the user example, this time by using the search capa
 
 The solution returns all intents including the 'eat' word.
 
-![](.//media/image21.png)
+    ![](.//media/image21.png)
 
 14. As you are looking for a user example which belongs to \#local\_recommend, expand it.
 
-![](.//media/image22.png)
+    ![](.//media/image22.png)
 
 15. The last one looks like the one we used during the test, click on it.
 
 Watson opens a right page and highlight the right user example.
 
-![](.//media/image23.png)
+    ![](.//media/image23.png)
 
 16. Select it, click on **Move**
 
-![](.//media/image24.png)
+    ![](.//media/image24.png)
 
 17. Enter **eat** as intent
 
-![](.//media/image25.png)
+    ![](.//media/image25.png)
 
 18. Click on **Move**
 
 **Note**: Now, your user example is move on the right intent and if you will do a new test the system returns the right intent.
 
-![](.//media/image26.png)
+    ![](.//media/image26.png)
 
 You have seen two options to improve the Watson classification
 
@@ -234,7 +234,7 @@ You are going to add general conversation topics intents.
 
 1.  On the **Content Catalog** tab, click **Add** **to skill** to add General category intents.
 
-![](.//media/image27.png)
+    ![](.//media/image27.png)
 
 2.  Go back to **Intents** tab, we will find new intents prefix by *#general\_*
 
@@ -257,9 +257,9 @@ In these labs, several intents will indicate that the user are looking for a res
 
     ![](.//media/image29.png)
 
-![1558618164957](media/1558618164957.png)
+    ![1558618164957](media/1558618164957.png)
 
-![](.//media/image30.png)
+    ![](.//media/image30.png)
 
 3.  Enable the **Fuzzy Matching** option
 
@@ -305,7 +305,7 @@ Let's turn on fuzzy matching to see how it improves entity recognition.
 
 12. When Watson is done training, type *where are the bikes?*
 
-![](.//media/image36.png)
+    ![](.//media/image36.png)
 
 **Note**: notice that the correct *@entity name:entity value* pair is now recognized for *bikes*.
 
@@ -332,7 +332,7 @@ The bot understands the `#order_pizza` intend and the entities `@pizza_toppings`
 17. In the 4th example, highlight the group `red peppers` the enter `@pizza_toppings`
 
 
-![](.//media/image38.png)
+    ![](.//media/image38.png)
 
 We identify the toppings requested by the user.
 
@@ -354,7 +354,7 @@ We are now going to identify the toppings not requested by the user.
 
 If we open the **entity** *@pizza_notoppings*, and the **Annotation** tab, we retrieve the annotated examples.
 
-![](.//media/image42.png)
+    ![](.//media/image42.png)
 
 **Enable system entities**
 
@@ -363,7 +363,7 @@ You will need to enable system entity. These entities can be used to help clarif
 22. If not already there, click the **Entities** and **System entities** tab.
 
 
-![](.//media/image43.png)
+    ![](.//media/image43.png)
 
 23. Switch on all system entities.
 
@@ -425,7 +425,7 @@ Each node has a node menu. This guide will go through most of the actions that 
 The panel that appears on the **right side of the screen** is the editor panel for the node. When you create a new node or when you click on  node to make edits, this panel will appear for the node that you click
 on. This is where all editing is done for the node. The image below explains the elements of the node editor. 
 
-![](.//media/image48.png)
+    ![](.//media/image48.png)
 
 3.  Select **Welcome** node to edit it and fill it as below
 
@@ -444,9 +444,9 @@ You can create a dialog branch for each of the intents you identified as well as
 5.  Click **Add node below** on the **Start of the conversation** node menu
 
 
-![](.//media/image51.png)
+    ![](.//media/image51.png)
 
-![](.//media/image52.png)
+    ![](.//media/image52.png)
 
 6. In this new node, enter the following values. By setting the condition to an intent, you are indicating that this node will be triggered by any input that matches the specified intent.
 
@@ -456,7 +456,7 @@ You can create a dialog branch for each of the intents you identified as well as
 | **If bot   recognizes** | #General_Greetings         |
 | **Watson   responses**  | Hi! What can I do for you? |
 
-![](.//media/image53.png)
+    ![](.//media/image53.png)
 
 **Note**: The figure above indicates that there is only one condition that is evaluated, one response and zero variable context used.
 
@@ -478,7 +478,7 @@ Test your conversation
 
 Now, you should have a dialog with four nodes.
 
-![](.//media/image54.png)
+    ![](.//media/image54.png)
 
 1.  Open **Try it out** panel.
 
@@ -518,7 +518,7 @@ An Assistant is a virtual container to which you add your skills that enables it
 
 1.  Click on the arrow to go back to the Watson Assistant menu and switch from the Skill tab to the **Assistant tab**
 
-![](.//media/image60.png)
+    ![](.//media/image60.png)
 
 2.  Click **Create New**
 
@@ -538,7 +538,7 @@ Now your assistant is ready to use.
 6.  You are going to review the sample UI to test your assistant. Click **Preview Link** tile.
 
 
-![](.//media/image63.png)
+    ![](.//media/image63.png)
 
 7.  You can use the URL link to test your Assistant. Click on the hyper
     link
