@@ -49,18 +49,20 @@ You've seen your data, what next? Now you will see how to use theses sensors dat
 
 1. Login to the [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"}.
 
-1. Browse the catalog under the "Boilerplates" category
+1. Browse the catalog under the "Starter Kit" category
 
-    ![catalog](./images/catalog.png)
+    ![catalog](./images/iot_starterkit.png)
 
-1. Double click on the **Internet of Things Platform Starter** Boilerplate to create your own <br /> instance of this IoT starter application.
+1. Double click on the **Internet of Things Platform Starter** to create your own <br /> instance of this IoT starter application.
 
-    ![iotstarter](./images/boilerplate-iotstarter.png)
+    ![iotstarter](./images/iot_app.png)
 
-1. Provide the application name, leave the same namefor the host, and click **Create**.
+1. Provide the application name, leave the same name for the host, make sure a region and a space are selected (if you already created a Cloudant service before, you may need to delete it: with a Lite account, you can create only one Cloudant instance) and click **Create**.
+
+  ![iotstarter](./images/iot-app-creation.png)
 <br /> *Note: Wait for a few minutes for your app to start running.*
 
-1. When your app is running (green status), select the app URL or type it into the browser to open the **Node-RED flow editor**
+1. When your app is running (green status), click on the app URL or type it into the browser to open the **Node-RED flow editor**
 
     ```
     https://<appname>.mybluemix.net
@@ -95,7 +97,9 @@ The second one that can process temperature readings from the Watson IoT platfor
 
     ![Node-RED Deploy](./images/nodered-deploy.png)
 
-1. Open the debug pane on the right. You will see that the flow is generating Temperature Status messages.
+1. Open the **Debug** pane on the right. You will see that the flow is generating Temperature Status messages.
+
+    ![Node-RED Debug](./images/debug.png)
 
 1. Increase the temperature value on the simulator to see the messages change in the debug pane.
 <br /> *Note that a different message appears if the temperature exceeds 40 degrees.*
@@ -107,11 +111,25 @@ The second one that can process temperature readings from the Watson IoT platfor
     ![Cloudant out node](./images/nodered-cloudant.png)
 
 1. In the Service type field, select the name of Cloudant service bound to Node.js runtime from the pull-down list.
-<br />Enter a dabatase name in lowercase. Keep the default operation insert and finally give a name to the node.
+<br /> Doubl click on the Cloudant node to pen it. Enter a dabatase name in lowercase. Keep the default operation insert and finally give a name to the node.
 
     ![Cloudant config](./images/nodered-cloudantconfig.png)
 
-1. Deploy the flow. Return to the IBM Cloud Platform console, on the app overview, click on "Connections" and on to the Cloudant service. Click on the green button to "Launch" the Cloudant web UI. Navigate into the DB records.
+1. Click Done. Deploy the flow.
+
+1. Return to the IBM Cloud console, on the app overview, click on "Connections" and on to the Cloudant service.
+
+    ![Cloudant 1](./images/cloudant1.png)
+
+1. Click on the service link next to the alias name.
+
+    ![Cloudant 2](./images/cloudant2.png)
+
+1. Click on **Launch Cloudant Dashboard** button to open the Cloudant console.
+
+    ![Cloudant 3](./images/cloudant3.png)
+
+1. Look at your Database records:
 
     ![Cloudant console](./images/cloudant-console.png)
 
@@ -121,7 +139,9 @@ In your Node-RED flow editor, you can then delete the link between your IoT node
 
 The first flow simulate a device publishing an event. To visualize the data in you Watson IoT platform organization you need to register the simulated device in your organization.
 
-1. Return to the IBM Cloud Platform console, from the "Connections" tab in your application dashboard, click on the IoT service -> launch it.
+1. Go back to the IBM Cloud Platform console, from the "Connections" tab in your application dashboard, click on the IoT service -> launch it.
+
+      ![launch](./images/iot_service_launch.png)
 
 1. From the Internet of Things service dashboard, access your IoT organisation and add your device to it: Select the Devices tab on the left.
 
@@ -162,9 +182,11 @@ The warning messages generated in Node-RED uses English by default. You may want
 
     ![Watson Language Translator catalog](./images/translator-catalog.png)
 
-1.  Connect it to your app to your app (from the Connection tab in your app dashboard). Restage your app.
+1.  Connect it to your app to your app: from the Connection tab of the service, click **Create connection**. Select your app and click **Connect**. Restage your app.
 
-    ![Watson Language Translator connect](./images/translator.png)
+    ![Watson Language Translator connect](./images/connect1.png)
+
+    ![Watson Language Translator connect](./images/connect2.png)
 
 1. Wait for your app to start again. In Node-RED flow editor, add a new **Language Translator** node to the flow.
 
@@ -175,10 +197,3 @@ The warning messages generated in Node-RED uses English by default. You may want
 1. Deploy the updated flow.
 
 1. Observe the translated output based on the selected language.
-
-
-# Data Analysis with the Watson IoT Platform
-
-For additional resources pay close attention to the following:
-
-- [Real Time Data Analysis Using IoT Platform Analytics](https://developer.ibm.com/recipes/tutorials/real-time-data-analysis-using-ibm-watson-iot-platform-analytics){:target="_blank"}
