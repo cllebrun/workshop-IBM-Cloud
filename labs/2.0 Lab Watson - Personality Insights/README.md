@@ -169,13 +169,13 @@ Log in and create the service
 
 5.  Click on Personality Insights.
 
-![](.//media/image9.png)
+    ![](.//media/image9.png)
 
 6.  Select the Lite plan and click on Create.
 
 7.  You get to the Personality Insights created service dashboard.
 
-![](.//media/image10.png)
+    ![](.//media/image10.png)
 
 Copy the credentials to authenticate to your service instance
 -------------------------------------------------------------
@@ -185,7 +185,7 @@ Copy the credentials to authenticate to your service instance
 2.  On the Manage page, click **Show Credentials** to view your credentials.
 
 
-![](.//media/image11.png)
+    ![](.//media/image11.png)
 
 3.  Copy the API Key and URL values.
 
