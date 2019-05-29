@@ -24,7 +24,7 @@ In the following lab, you will learn:
 
 # Pre-Requisites
 
-+ Get an [IBM Cloud Platform account] in the US region (https://cllebrun.github.io/labs/0_Registration/), or use an existing account.
++ Get an [IBM Cloud Platform account](https://cllebrun.github.io/labs/0_Registration/) in the US region, or use an existing account.
 
 
 # Steps
@@ -46,20 +46,26 @@ The first part of this lab will show you how to create a Visual Recognition Serv
 3. Then click the **Watson Studio** tile, then choose a name for your service (e.g. Watson Studio-pizza), in the **DALLAS** region, then click the Create button.
 
  <img src="./images/studio-service.png"/>
+
 Watson Studio is the tool for building AI models in a collaborative fashion so you can provide a more democratic training process that reduces AI biases.
 
 4. Click the Get Started button to open Watson Studio.
 5. Click the Get Started button when prompt.
 
 6. Click **Create a project**.
+
    <img src="./images/create-project.png"/>
+
 7. Select **Visual Recognition** type of project.
+
    <img src="./images/vr-project.png"/>
 
 8. Select the **US South** region.
+
    <img src="./images/vr-region.png"/>
 
 9. Enter a name for your project (e.g. My Pizza Quality Check) and a description if you like then click the **Create** button. This project will create a Watson Visual Recognition service and the needed Cloud Object Storage.
+
    <img src="./images/pizza-check.png"/>
 
 
@@ -73,6 +79,7 @@ Watson Studio is the tool for building AI models in a collaborative fashion so y
 Before creating a custom model, let's check out the General model and the Food model that IBM has already trained on millions of images.
 
 10. Click the **watson-visual-combined-dsx** link for the Watson Visual Recognition service that was automatically created for you.
+
    <img src="./images/default-model.png"/>
 
 
@@ -80,9 +87,11 @@ Before creating a custom model, let's check out the General model and the Food m
 11. Click the Test button of the General model panel.
 
 12. Click the Test tab of this model to upload an unlabeled image that Watson will examine to determine what insights can be gleaned from Watson's training of millions of images.
+
   <img src="./images/test-general.png"/>
 
-13. Locate your favorite image search tool to find test images, use your personal images or drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images)
+13. Locate your favorite image search tool to find test images, use your personal images or drag images from the folder <a href="https://cllebrun.github.io/workshop-IBM-Cloud/labs/2.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images.zip" download="Lab1_1_test_images">Test images</a>
+
   <img src="./images/test-general-images.png"/>
 
 Notice it displays the confidence score (which is the statistical probability of this classification against other classifiers in this model).
@@ -95,9 +104,10 @@ Now let's explore the Faces model.
 
 15. Click the Test button of the Faces model.
 
-16. Click the Test tab of this model then drag images from [Test images folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images) on the canvas.
+16. Click the Test tab of this model then drag images from the folder <a href="https://cllebrun.github.io/workshop-IBM-Cloud/labs/2.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab1%20-%20Test%20Images.zip" download="Lab1_1_test_images">Test images</a> on the canvas.
 
-<img src="./images/test-faces-images.png"/>
+  <img src="./images/test-faces-images.png"/>
+
 As you can see, the Faces model not only detect the number of persons, but also the gender and an estimate of the age. It also locates the position of each faces on the picture.
 
 Out of the box, Watson can tell you what kind of objects are in a photo even though these are your private photos that have not been indexed by a search engine nor contain labeled tags that tell Watson what the photo is about -- instead Watson can deduce this by comparing your photo against the millions of labeled photos that Watson has been trained on.
@@ -117,12 +127,13 @@ The Visual Recognition service is trained by providing example images for each c
 1. Once again click the **watson_vision_combined-dsx** service link to return to the model choices.
 
 2. Click on the **Create Model** button on the Classify Images tile.
+
   <img src="./images/classify-images.png"/>
 
 3. Rename your model "Default Custom Model" by "PizzaConditionModel"
 
 4. You will now load images create your model classes. The pane to manage file upload is shown on the right side of your screen.
-Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer good_pizza_images.zip, bad_pizza_images.zip and not_pizza_images.zip in the [Lab 2 - Training Set folder](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set).
+Click the Browse button to upload a zip file containing at least 10 photos (.jpg or .png) for good pizzas, at least 10 photos for bad pizzas, and 10 photos for not-pizzas. You can also drag and drop from your file explorer or the folder <a href="https://cllebrun.github.io/workshop-IBM-Cloud/labs/2.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set.zip" download="Lab2_training_set"> Lab 2 - Training Set</a>
 
   <img src="./images/upload-jpeg.png"/>
 
@@ -143,7 +154,7 @@ Now that Watson has been trained on your specific images, let's test it out usin
 
   <img src="./images/test-custom.png"/>
 
-10. Click the Test tab and drop some pizza images onto the canvas to see how your custom model performs. Tip: you'll find a folder named [Lab 2 - Test images](https://github.com/cllebrun/cllebrun.github.io/tree/master/labs/3.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Test%20images) that contains some test images you can use; or find some from your favorite search engine.
+10. Click the Test tab and drop some pizza images onto the canvas to see how your custom model performs. Tip: you'll find a folder named <a href="https://cllebrun.github.io/workshop-IBM-Cloud/labs/2.3%20Lab%20Watson%20-%20Watson%20Visual%20Recognition/Lab2%20-%20Training%20Set/good_pizza_images.zip" download="Lab2_test_images"> Lab 2 - Test Images </a>  that contains some test images you can use; or find some from your favorite search engine.
 
     <img src="./images/images-test-custom.png"/>
 
