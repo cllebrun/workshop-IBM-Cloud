@@ -78,13 +78,13 @@ Log in and create the service
 
 5.  Click on Tone Analyzer.
 
-  ![](.//media/image5.png)
+    ![](.//media/image5.png)
 
 6.  Select the Lite plan and click on Create.
 
 7.  You get to the Tone Analyzer created service dashboard.
 
-  ![](.//media/image6.png)
+    ![](.//media/image6.png)
 
 Copy the credentials to authenticate to your service instance
 -------------------------------------------------------------
@@ -93,7 +93,7 @@ Copy the credentials to authenticate to your service instance
 
 2.  On the Manage page, click **Show Credentials** to view your credentials.
 
-![](.//media/image7.png)
+    ![](.//media/image7.png)
 
 3.  Copy the API Key and URL values.
 
@@ -108,11 +108,11 @@ In this lab we will use Node-RED to call the Tone Analyzer service.
 
 3.  Click on Node-RED Starter.
 
-![](.//media/image8.png)
+    ![](.//media/image8.png)
 
 4.  Give a name for the application, select the Default plan and click on Create.
 
-![](.//media/image9.png)
+    ![](.//media/image9.png)
 
 5.  Wait for your application to start and then click on Visit App URL.
 
@@ -169,7 +169,7 @@ Use Tone Analyzer inside Node-RED
 
 13. Click on Deploy.
 
-![](.//media/image19.png)
+    ![](.//media/image19.png)
 
 14. You should get a Successfully deployed message.
 
@@ -179,11 +179,11 @@ Use Tone Analyzer inside Node-RED
 
 17. You can visualize the response by clicking on the Debug messages icon on the top right.
 
- ![](.//media/image20.png)
+    ![](.//media/image20.png)
 
 18. You can see the output of the Tone Analyzer service in the response object.
 
-![](.//media/image21.png)
+    ![](.//media/image21.png)
 
 The service returns a JSON object that always contains a document\_tone field. This field contains an object that provides the analysis of the full input document. It contains a single field, tones, that provides
 the results of the analysis for each qualifying tone of the document. If the sentences parameter of the request is omitted or set to true, the response also includes a sentences\_tone field. This field contains an
