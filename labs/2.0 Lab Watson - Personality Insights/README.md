@@ -17,7 +17,7 @@ You can access the Personality Insights quick demo at the following url:
 
 <https://personality-insights-demo.ng.bluemix.net/>
 
-![](.//media/image2.png){width="6.5in" height="3.65625in"}
+![](.//media/image2.png)
 
 Personality Insights service allows to gain insight into how and why people think, act, and feel the way they do. This service applies linguistic analytics and personality theory to infer attributes from a
 person\'s unstructured text.
@@ -32,13 +32,13 @@ The quick demo application allows to analyze text from three sources:
 
 For tweets and replies analysis, first select a twitter account and click on the Analyze button.
 
-![](.//media/image3.png){width="6.5in" height="3.65625in"}
+![](.//media/image3.png)
 
 You get the results of the analysis in the Output section.
 
 First output is a summary of the personality.
 
-![](.//media/image4.png){width="6.5in" height="3.65625in"}
+![](.//media/image4.png)
 
 On the right, you can see the consumption preferences.
 
@@ -118,7 +118,7 @@ Here is a table summarizing the consumption preferences:
 
 Then you can find the models reported by the service:
 
-![](.//media/image5.png){width="6.5in" height="3.65625in"}
+![](.//media/image5.png)
 
 **Personality**: based on the Big Five model. Big Five is one of the most studied of the personality models that were developed by psychologists Costa and McCrae (1992), and Norman (1963). It is the most
 widely used personality model to describe how a person generally engages with the world. The service computes the five dimensions and thirty facets of the model. The dimensions are often referred to by the
@@ -127,7 +127,7 @@ clinical meaning, the service presents such insights under the more generally ap
 
 For each dimension you can get details by clicking on the arrow sign next to it.
 
-![](.//media/image6.png){width="6.5in" height="3.65625in"}
+![](.//media/image6.png)
 
 **Consumer Needs**: Needs are an important aspect of human behavior. Research literature suggests that several types of human needs are universal and directly influence consumer behavior (Kotler and Armstrong (2013) and Ford (2005)). The twelve categories of needs that are reported by the service are described in marketing literature as desires that people hope to fulfill when they consider a product or service.
 
@@ -147,11 +147,11 @@ The service computes the five basic human values that were proposed by Schwartz 
 
 You can get an explanation of each characteristic simply by hovering over it.
 
-![](.//media/image7.png){width="6.5in" height="3.65625in"}
+![](.//media/image7.png)
 
 You can get a sunburst visualization by clicking on the "View personality traits in sunburst visualization" link.
 
-![](.//media/image8.png){width="6.5in" height="3.65625in"}
+![](.//media/image8.png)
 
 Create the Watson Personality Insights service and call it
 ==========================================================
@@ -169,13 +169,13 @@ Log in and create the service
 
 5.  Click on Personality Insights.
 
-> ![](.//media/image9.png){width="6.5in" height="3.65625in"}
+![](.//media/image9.png)
 
 6.  Select the Lite plan and click on Create.
 
 7.  You get to the Personality Insights created service dashboard.
 
-> ![](.//media/image10.png){width="6.5in" height="3.65625in"}
+![](.//media/image10.png)
 
 Copy the credentials to authenticate to your service instance
 -------------------------------------------------------------
@@ -185,7 +185,7 @@ Copy the credentials to authenticate to your service instance
 2.  On the Manage page, click **Show Credentials** to view your credentials.
 
 
-![](.//media/image11.png){width="6.5in" height="3.65625in"}
+![](.//media/image11.png)
 
 3.  Copy the API Key and URL values.
 

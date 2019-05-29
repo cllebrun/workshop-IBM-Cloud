@@ -16,13 +16,13 @@ You can access the Tone Analyzer General purpose quick demo at the following url
 
 https://tone-analyzer-demo.ng.bluemix.net/
 
-![](.//media/image2.png){width="6.5in" height="3.65625in"}
+![](.//media/image2.png)
 
 Select one of the example (Tweets, Online Review, Email message, Product, Review in French or Your own text) and click on Analyze.
 
 You get the results of the analysis in the Output section.
 
-![](.//media/image3.png){width="6.5in" height="3.65625in"}
+![](.//media/image3.png)
 
 Here is a description of the different emotional and language tones:
 
@@ -51,7 +51,7 @@ You can access the Tone Analyzer Customer engagement quick demo at the following
 
 <https://customer-engagement-demo.ng.bluemix.net/>
 
-![](.//media/image4.png){width="6.5in" height="3.65625in"}
+![](.//media/image4.png)
 
 You can use the Tone Analyzer for Customer Engagement endpoint to monitor customer support conversations. Escalate customer conversations when they turn sour, or find opportunities to improve customer service scripts, dialogs and customer journeys. Tones detected with this
 endpoint include frustrated, sad, satisfied, excited, polite, impolite and sympathetic.
@@ -78,13 +78,13 @@ Log in and create the service
 
 5.  Click on Tone Analyzer.
 
-> ![](.//media/image5.png){width="6.5in" height="3.65625in"}
+![](.//media/image5.png)
 
 6.  Select the Lite plan and click on Create.
 
 7.  You get to the Tone Analyzer created service dashboard.
 
-> ![](.//media/image6.png){width="6.5in" height="3.65625in"}
+![](.//media/image6.png)
 
 Copy the credentials to authenticate to your service instance
 -------------------------------------------------------------
@@ -93,7 +93,7 @@ Copy the credentials to authenticate to your service instance
 
 2.  On the Manage page, click **Show Credentials** to view your credentials.
 
-![](.//media/image7.png){width="6.5in" height="3.65625in"}
+![](.//media/image7.png)
 
 3.  Copy the API Key and URL values.
 
@@ -108,19 +108,19 @@ In this lab we will use Node-RED to call the Tone Analyzer service.
 
 3.  Click on Node-RED Starter.
 
-![](.//media/image8.png){width="6.5in" height="3.65625in"}
+![](.//media/image8.png)
 
 4.  Give a name for the application, select the Default plan and click on Create.
 
-![](.//media/image9.png){width="6.5in" height="3.65625in"}
+![](.//media/image9.png)
 
 5.  Wait for your application to start and then click on Visit App URL.
 
-    ![](.//media/image10.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image10.png)
 
 6.  Follow the instructions to secure your Node-RED application.
 
-    ![](.//media/image11.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image11.png)
 
 7.  Click on Go to your Node-RED editor
 
@@ -129,33 +129,33 @@ Use Tone Analyzer inside Node-RED
 
 1.  Drap and drop the Tone Analyzer node on the palette.
 
-    ![](.//media/image12.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image12.png)
 
 2.  Double-click on the node to edit its properties.
 
-    ![](.//media/image13.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image13.png){
 
 3.  Put the API key of the Tone Analyzer service you created previously, deselect Use Default Service Endpoint and enter the Service Endpoint of the Tone Analyzer service, select Multiple Tones for the
     version\_date field.
 
-    ![](.//media/image14.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image14.png)
 
 4.  Click on Done.
 
 5.  Drag and drop an inject node and a debug node from the palette.
 
-    ![](.//media/image15.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image15.png)
 
 6.  Wire the nodes together.
 
-    ![](.//media/image16.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image16.png)
 
 7.  Double-click the timestamp node to edit its properties.
 
 8.  For the Payload select String and enter the sentences that you want to be analyzed. Here is an example that you can use: "Team, I know that times are tough! Product sales have been disappointing for the
     past three quarters. We have a competitive product, but we need to do a better job of selling it!"
 
-    ![](.//media/image17.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image17.png)
 
 9.  Click on Done.
 
@@ -163,13 +163,13 @@ Use Tone Analyzer inside Node-RED
 
 11. Replace the word payload by the word response.
 
-    ![](.//media/image18.png){width="6.5in" height="3.65625in"}
+    ![](.//media/image18.png)
 
 12. Click on Done.
 
 13. Click on Deploy.
 
-> ![](.//media/image19.png){width="6.5in" height="3.65625in"}
+![](.//media/image19.png)
 
 14. You should get a Successfully deployed message.
 
@@ -179,11 +179,11 @@ Use Tone Analyzer inside Node-RED
 
 17. You can visualize the response by clicking on the Debug messages icon on the top right.
 
-> ![](.//media/image20.png){width="6.5in" height="3.65625in"}
+ ![](.//media/image20.png)
 
 18. You can see the output of the Tone Analyzer service in the response object.
 
-![](.//media/image21.png){width="6.5in" height="3.65625in"}
+![](.//media/image21.png)
 
 The service returns a JSON object that always contains a document\_tone field. This field contains an object that provides the analysis of the full input document. It contains a single field, tones, that provides
 the results of the analysis for each qualifying tone of the document. If the sentences parameter of the request is omitted or set to true, the response also includes a sentences\_tone field. This field contains an

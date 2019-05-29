@@ -135,7 +135,7 @@ Intents can be imported into the Watson Assistant tool using a Comma Separated V
 
     ![](.//media/image13.png)
 
-    Drag `WA_intents.csv` into the **Choose a file** box or click **Choose a file** to browse your computer.
+    Drag  <a href="https://cllebrun.github.io/workshop-IBM-Cloud/labs/2.2%20Lab%20Watson%20-%20Watson%20Assistant/WA_intents.csv" download="WA_intents.csv">WA_intents.csv</a> into the **Choose a file** box or click **Choose a file** to browse your computer.
 
 > **Note**: Notice that the conversation tooling did not import any questions that were exact duplicates of questions that you manually entered. Duplicates are not case sensitive. For example, "Do you have a sauna*?"* is the same as "do you have a sauna". It did import questions that had semantic differences, such as the absence of punctuation, extra spaces between words, or misspelled words.
 
@@ -271,7 +271,7 @@ In order to import a file successfully, it must include a minimum of two columns
 
 5.  Click **Import**
 
-6.  Drag `WA_entities.csv` into the **Choose a file** box or click
+6.  Drag <a href="https://cllebrun.github.io/workshop-IBM-Cloud/labs/2.2%20Lab%20Watson%20-%20Watson%20Assistant/WA_entities.csv" download="WA_entities.csv">WA_entities.csv</a> into the **Choose a file** box or click
     **Choose a file** to browse your computer.
 
     ![](.//media/image31.png)
