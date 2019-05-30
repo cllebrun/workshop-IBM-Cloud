@@ -197,3 +197,27 @@ The warning messages generated in Node-RED uses English by default. You may want
 1. Deploy the updated flow.
 
 1. Observe the translated output based on the selected language.
+
+# Dashboard
+
+1. In Node-RED, up and right, click on the hamburger menu and select "manage palette"
+
+ ![Manage palette](./images/manage-palette.png)
+
+2. Look for "node-red-dashboard" and install it
+
+![Manage library](./images/manage-library.png)
+
+3. New nodes appear on the palette, chose the "gauge" one and the "audio out" one and add it to the flow: 
+
+    ![flow dashboard](./images/flow-dashboard.png)
+Double click on your Gauge node, you need to define a ui_group and a tab_ui (select the default one).
+
+      ![config](./images/config-dash.png)
+
+4. Deploy. You can notice a new tab next to the dashboard tab. It is your dashboard management.
+5. You can open the dashboard in your browser, click on the icon on the dashboard tab :
+
+    ![icon](./images/icon-dashboard.png)
+
+    ![visu](./images/visualize.png)
