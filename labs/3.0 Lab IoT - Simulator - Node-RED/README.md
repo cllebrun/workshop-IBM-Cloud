@@ -2,7 +2,7 @@
 
 # 3.0 Lab IoT - Simulator - Node-RED - Introduction
 
-This tutorial demonstrates how to connect a simulated device to the Watson IoT platform, visualize its live data, store its data into a database and leverage [Node-RED](http://www.nodered.org){:target="_blank"} tool for wiring together hardware devices, APIs and online services.
+This tutorial demonstrates how to connect a simulated device to the Watson IoT platform, visualize its live data, store its data into a database and leverage [Node-RED](http://www.nodered.org) tool for wiring together hardware devices, APIs and online services.
 
 
 
@@ -15,7 +15,7 @@ This tutorial demonstrates how to connect a simulated device to the Watson IoT p
 
 
 # Pre-Requisites
-* An [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"} account
+* An [IBM Cloud Platform](http://console.bluemix.net/) account
 
 
 # Start the simulated device
@@ -23,7 +23,7 @@ This tutorial demonstrates how to connect a simulated device to the Watson IoT p
 We will use a simulator of a temperature sensor. This sensor also simulates Humidity and Object Temperature.<br />
 This way, we don't require an actual hardware device to test our application.
 
-1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor){:target="_blank"}.
+1. In a new browser window or on a smartphone, browse to [IoT Sensor](http://quickstart.internetofthings.ibmcloud.com/iotsensor).
 <br />Alternatively, enter this short URL: http://ibm.biz/iotsensor
 
    <img alt= "IoT sensor simulator" src="./images/iotsensor.png" width="40%"/>
@@ -33,7 +33,7 @@ This way, we don't require an actual hardware device to test our application.
 
 # View the live sensor data
 
-1. In a new browser window, browse to [Watson IOT Platform quickstart](https://quickstart.internetofthings.ibmcloud.com){:target="_blank"}.
+1. In a new browser window, browse to [Watson IOT Platform quickstart](https://quickstart.internetofthings.ibmcloud.com).
 <br />Alternatively, enter this short URL: http://ibm.biz/iotquickstart
 
     ![IoT Quickstart](./images/iot-quickstart.png)
@@ -47,7 +47,7 @@ This way, we don't require an actual hardware device to test our application.
 
 You've seen your data, what next? Now you will see how to use theses sensors data in an application created with the IBM Cloud Platform.
 
-1. Login to the [IBM Cloud Platform](http://console.bluemix.net/){:target="_blank"}.
+1. Login to the [IBM Cloud Platform](http://console.bluemix.net/).
 
 1. Browse the catalog under the "Starter Kit" category
 
