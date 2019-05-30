@@ -2,26 +2,30 @@
 
 # 3.1 Lab IoT - Dashboard Nodes - Introduction
 
-With Node-RED you have access to a large set of nodes librairies. You will learn here how to use the Node-RED dashboard nodes.
+In this lab you are going to connect to a real device and use the data you collect from your real sensors.
 
 
 # Pre-Requisites
 
-+ Complete the Lab 4.1
++ Complete the Lab 3.0
 
-# Import the libraries
+# Connect
 
-1. In Node-RED, up and right, click on the hamburger menu and select "manage palette"
- ![Manage palette](./images/manage-palette.png)
+1. On your Node-red app, add a new Flow to your workspace (click one the "+" at the top right of your workspace)
 
-2. Look for "node-red-dashboard" and install it
-![Manage library](./images/manage-library.png)
+    ![new_tab](./images/new_tab.png)
 
-3. New nodes appear on the palette, chose the "gauge" one and the "audio out" one and add it jto the flow: 
+2. Drag and drop an **ibmiot** and a **Debug** nodes from your palette. Wire them together.
 
-    ![flow dashboard](./images/flow-dashboard.png)
+    ![connect](./images/connect.png)
 
-4. Deploy. You can notice a new tab next to the dashboard tab. It is your dashboard management.
-5. You can open the dashboard in your browser :
+3. You are going to connect to the a specific IoT platform organisation: The one where the TJBOT is sending his senseHat data. Double click on the IoT node to configure it:
 
-    ![visu](./images/visualize.png)
+    - Authentication: API Key
+    - Device type: TJBOT
+
+    ![connect](./images/config_connect1.png)
+
+4. Click on the pen next the "Add new ibmiot" to enter an AKY KEY/Token provided by the instructor
+
+5. Deploy and look at the results in the **Debug** tab
